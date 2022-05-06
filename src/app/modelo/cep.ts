@@ -1,0 +1,19 @@
+
+export class Cep {
+
+  cep?: string;
+  logradouro?: string;
+  complemento?: string;
+  bairro?: string;
+  localidade?: string;
+  uf?: string;
+  ibge?: string;
+  gia?: string;
+  ddd?: string;
+  siafi?: string
+  numero?: number;
+
+  constructor(object: Partial<Cep>){
+    Object.assign(this, object);
+}
+}

@@ -11,6 +11,10 @@ import { ListaProdutosComponent } from './componentes/lista-produtos/lista-produ
 import { MenuComponent } from './componentes/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ContatoComponent } from './componentes/contato/contato.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { CadastroComponent } from './componentes/cadastro/cadastro.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     FooterComponent,
     ListaProdutosComponent,
-    MenuComponent
+    MenuComponent,
+    ContatoComponent,
+    LoginComponent,
+    CadastroComponent,
+
   ],
   imports: [
     BrowserModule,

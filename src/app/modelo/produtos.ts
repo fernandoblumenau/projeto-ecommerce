@@ -1,10 +1,10 @@
 export class Produtos {
 
-  id?: string;
-  nome?: string;
-  valor?: string;
-  promocao?: boolean;
-  valorPromo?: string;
-  imagem?: string;
+  idProduto?: number;
+  nomeProduto?: string;
+  valorProduto?: number;
+  promocaoProduto?: boolean;
+  valorPromoProduto?: number;
+  imagemProduto?: string;
 
 }
