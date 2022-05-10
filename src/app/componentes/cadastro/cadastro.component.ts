@@ -46,6 +46,8 @@ export class CadastroComponent implements OnInit {
     this.cadastroService.save(this.formContato).subscribe(
       (resp)=>{
         console.log(resp);
+        this.formContato={};
+
       }
     );
   }

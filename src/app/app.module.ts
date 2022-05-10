@@ -1,3 +1,4 @@
+import { DetalheProdutoComponent } from './componentes/detalhe-produto/detalhe-produto.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +17,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CadastroComponent } from './componentes/cadastro/cadastro.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,7 @@ import { CadastroComponent } from './componentes/cadastro/cadastro.component';
     ContatoComponent,
     LoginComponent,
     CadastroComponent,
+    DetalheProdutoComponent,
 
   ],
   imports: [
