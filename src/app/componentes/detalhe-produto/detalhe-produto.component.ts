@@ -11,17 +11,24 @@ import { ActivatedRoute } from '@angular/router';
 export class DetalheProdutoComponent implements OnInit {
 
 
-  constructor(private produtoService: ProdutosService) { }
+  constructor(private produtoService: ProdutosService,
+              private route: ActivatedRoute) { }
 
-  public detalhesProdutos?: Produtos[];
+  public detalhesProduto?: Produtos;
 
   ngOnInit() {
-    this.produtoService.obterProdutos()
-      .subscribe(
-        detalhesProdutos => {
-          this.detalhesProdutos = detalhesProdutos;
-          console.log(detalhesProdutos);
-        },
-      );
+
+    const idProduto = this.route.snapshot.paramMap.get('id');
+
+    if(idProduto) {
+      this.produtoService.obterProdutoById(idProduto)
+        .subscribe(
+          (detalhesProdutos) => {
+            this.detalhesProduto = detalhesProdutos;
+            console.log(detalhesProdutos);
+          },
+        );
+
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { DetalheProdutoComponent } from './componentes/detalhe-produto/detalhe-produto.component';
 import { CadastroComponent } from './componentes/cadastro/cadastro.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ListaProdutosComponent } from './componentes/lista-produtos/lista-produtos.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'contato', component: ContatoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroComponent },
+  { path: 'produtos/:id', component: DetalheProdutoComponent },
 ];
 
 @NgModule({
